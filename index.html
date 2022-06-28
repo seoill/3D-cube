@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D SLIDE</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="./js/lib/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <section id="sectionCube">
+      <div class="container">
+        <div class="gap">
+          <div class="wrap">
+            <div class="controler-box">
+              <ul>
+                <li>
+                  <label for="front">front</label>
+                  <input type="radio" id="front" name="face" checked class="face">
+                </li>
+                <li>
+                  <label for="back">back</label>
+                  <input type="radio" id="back" name="face" class="face">
+                </li>
+                <li>
+                  <label for="left">left</label>
+                  <input type="radio" id="left" name="face" class="face">
+                </li>
+                <li>
+                  <label for="right">right</label>
+                  <input type="radio" id="right" name="face" class="face"> 
+                </li>
+                <li>
+                  <label for="top">top</label>
+                  <input type="radio" id="top" name="face" class="face">
+                </li>
+                <li>
+                  <label for="bottom">bottom</label>
+                  <input type="radio" id="bottom" name="face" class="face">
+                </li>
+                <li class="xy">
+                  <label for="xdeg">X축</label>
+                  <input type="radio" id="xDeg" name="face" class="face">
+                </li>
+                <li>
+                  <label for="yDeg">Y축</label>
+                  <input type="radio" id="yDeg" name="face" class="face">
+                </li>
+                <li>
+                  <label for="xyDeg">XY축</label>
+                  <input type="radio" id="xyDeg" name="face" class="face">
+                </li>
+                <li>
+                  <p>deg(축 설정시 사용가능)</p>
+                  <input type="range" id="deg" max="180" min="-180" value="0">
+                </li>
+              </ul>
+            </div>
+            <div class="cube-box">
+              <div class="cube">
+                <span class="face front">front</span>
+                <span class="face back">back</span>
+                <span class="face left">left</span>
+                <span class="face right">right</span>
+                <span class="face top">top</span>
+                <span class="face bottom">bottom</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/cube.js"></script>
+</body>
+</html>
